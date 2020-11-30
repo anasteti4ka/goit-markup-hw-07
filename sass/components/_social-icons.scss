@@ -6,22 +6,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons-link:hover .social-icon-svg,
-.social-icons-link:focus .social-icon-svg {
-  fill: var(--white);
-}
-
-.icon-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white);
-  padding-top: 10px;
-  padding-left: 70px;
-}
-
 .footer-icons {
   fill: var(--white);
   transition-duration: 250ms;

@@ -10,6 +10,11 @@
 @import "./layouts/header";
 @import "./layouts/navigation";
 @import "./layouts/hero";
+@import "./layouts/description";
+@import "./layouts/about";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
 
 .portfolio-body {
   margin: 0;
@@ -20,130 +25,6 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-}
-
-.contacts-footer {
-  text-decoration: none;
-  color: var(--contacts-footer);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-footer:hover,
-.contacts-footer:focus {
-  color: var(--accent-color);
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.content-box-about {
-  width: calc(100% / 3 - 30px);
-  position: relative;
-  margin: 10px;
-  width: 370px;
-  height: 294px;
-}
-
-.content-box-about > .text-wwd {
-  position: absolute;
-  top: 224px;
-  right: 0;
-  margin: 0;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
-  color: var(--white);
-  padding-top: 27px;
-  padding-bottom: 27px;
-}
-
-.wwd1 {
-  padding-left: 83px;
-  padding-right: 82px;
-}
-
-.wwd2 {
-  padding-left: 86px;
-  padding-right: 84px;
-  max-width: 370px;
-}
-
-.wwd3 {
-  padding-left: 91px;
-  padding-right: 90px;
-  max-width: 370px;
-}
-
-.description-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--black);
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.description {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.about-us {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black);
-  padding-bottom: 50px;
-}
-
-.team {
-  background: var(--whitegrey);
-}
-
-.figure-studio {
-  width: 270px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black);
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.team-name-prof {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--grey);
 }
 
 .figure-portf {
@@ -209,14 +90,6 @@
   color: var(--grey);
 }
 
-.logo-footer {
-  padding-bottom: 20px;
-}
-
-.footer-padding:not(:last-child) {
-  padding-bottom: 9px;
-}
-
 .portfolio-figure {
   display: flex;
   flex-wrap: wrap;
@@ -226,10 +99,6 @@
 
 .portfolio-border {
   border: 1px solid #ececec;
-}
-
-.btn-p:not(:last-child) {
-  margin-right: 8px;
 }
 
 .port-item {
@@ -243,160 +112,4 @@
 .port-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.desc-content1::before {
-  content: "";
-  display: block;
-  background-color: var(--whitegrey);
-  width: 270px;
-  height: 120px;
-  background-image: url(../img/antenna.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.desc-content2::before {
-  content: "";
-  display: block;
-  background-color: var(--whitegrey);
-  width: 270px;
-  height: 120px;
-  background-image: url(../img/clock.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.desc-content3::before {
-  content: "";
-  display: block;
-  background-color: var(--whitegrey);
-  width: 270px;
-  height: 120px;
-  background-image: url(../img/diagram.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.desc-content4::before {
-  content: "";
-  display: block;
-  background-color: var(--whitegrey);
-  width: 270px;
-  height: 120px;
-  background-image: url(../img/astronaut.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.flexbox-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.client-list {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.client-svg {
-  fill: var(--icon-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-1 {
-  width: 44.27px;
-  height: 49.23px;
-}
-
-.client-2 {
-  width: 40px;
-  height: 52px;
-}
-
-.client-3 {
-  width: 41px;
-  height: 42.6px;
-}
-
-.client-4 {
-  width: 79.66px;
-  height: 42.02px;
-}
-
-.client-5 {
-  width: 59px;
-  height: 47px;
-}
-
-.client-6 {
-  width: 88.48px;
-  height: 45.44px;
-}
-
-.client-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  background-color: var(--white);
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-link:hover {
-  border-color: var(--accent-color);
-}
-
-.client-link:hover .client-svg,
-.client-link:focus .client-svg {
-  fill: var(--accent-color);
-}
-
-.subscribe {
-  margin-left: 93px;
-}
-
-.footer-form {
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.sub-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white);
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.sub-email {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: var(--lightblack);
-  width: 358px;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  margin-right: 12px;
-  font-weight: normal;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.25;
-  letter-spacing: 0.03em;
 }

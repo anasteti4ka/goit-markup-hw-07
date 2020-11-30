@@ -49,6 +49,10 @@
   padding-bottom: 50px;
 }
 
+.btn-p:not(:last-child) {
+  margin-right: 8px;
+}
+
 .footer-button {
   font-weight: bold;
   font-size: 16px;

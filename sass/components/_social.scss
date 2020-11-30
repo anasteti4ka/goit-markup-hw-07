@@ -52,3 +52,8 @@
 .social-icons-link-footer:focus .footer-icons {
   background-color: var(--accent-color);
 }
+
+.social-icons-link:hover .social-icon-svg,
+.social-icons-link:focus .social-icon-svg {
+  fill: var(--white);
+}
