@@ -14,25 +14,31 @@
   margin-left: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.port-item:hover,
-.port-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .figure-portf {
   width: 370px;
   height: 404px;
-  background: var(--white);
-  border: 1px solid var(--borders-color);
+  background: $white;
+  border: 1px solid $borders-color;
   box-sizing: border-box;
 }
 
 .overflow {
   position: relative;
   overflow: hidden;
+
+  &:hover {
+    .overlay {
+      transform: translateX(0);
+    }
+  }
 }
 
 .overlay {
@@ -46,22 +52,18 @@
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.overflow:hover .overlay {
-  transform: translateX(0);
-}
-
-.overlay-text {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--white);
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-right: 24px;
-  padding-left: 24px;
+  &-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 
 .portfoilio-items {
@@ -79,7 +81,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--black);
+  color: $black;
 }
 
 .project-description {
@@ -89,5 +91,5 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--grey);
+  color: $grey;
 }

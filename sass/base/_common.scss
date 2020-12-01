@@ -11,7 +11,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--grey);
+  color: $grey;
 }
 
 h1,
@@ -22,7 +22,7 @@ h3 {
 }
 
 button {
-  border-color: var(--whitegrey);
+  border-color: $whitegrey;
   border-style: hidden;
 }
 
@@ -33,7 +33,7 @@ ul {
 }
 
 header {
-  background: var(--white);
+  background: $white;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -45,7 +45,7 @@ img {
 }
 
 footer {
-  background: var(--lightblack);
+  background: $lightblack;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -64,20 +64,20 @@ p {
 }
 
 .link {
-  color: var(--black);
+  color: $black;
   text-decoration: none;
   font-weight: 500;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .web {
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -86,7 +86,7 @@ p {
 }
 
 .studio {
-  color: var(--white);
+  color: $white;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -117,7 +117,7 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white);
+  color: $white;
 }
 
 .portfolio-body {

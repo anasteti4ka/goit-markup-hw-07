@@ -16,7 +16,7 @@
 
 .module {
   position: absolute;
-  background-color: var(--white);
+  background-color: $white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -32,7 +32,7 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -41,22 +41,22 @@
   margin: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.exit-icon-svg {
-  width: 18px;
-  height: 18px;
-  fill: var(--black);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.1);
 
-.exit-icon-link:hover {
-  border-color: rgba(0, 0, 0, 0.1);
-}
+    .exit-icon-svg {
+      width: 18px;
+      height: 18px;
+      fill: $black;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.exit-icon-link:hover .exit-icon-svg {
-  fill: var(--accent-color);
+    .exit-icon-svg {
+      fill: $accent-color;
+    }
+  }
 }
 
 .contmodule {
@@ -68,17 +68,6 @@
   margin-left: auto;
 }
 
-.form-text {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black);
-  padding-top: 40px;
-  margin-bottom: 12px;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -88,7 +77,18 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--grey);
+  color: $grey;
+
+  &-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $black;
+    padding-top: 40px;
+    margin-bottom: 12px;
+  }
 }
 
 .field {
@@ -105,10 +105,22 @@
   height: 40px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.field:focus {
-  border-color: var(--accent-color);
+  &:focus {
+    border-color: $accent-color;
+
+    + .modul-name-icon-svg {
+      fill: $accent-color;
+    }
+
+    + .modul-phone-icon-svg {
+      fill: $accent-color;
+    }
+
+    + .modul-email-icon-svg {
+      fill: $accent-color;
+    }
+  }
 }
 
 .modul-name-icon-svg {
@@ -118,7 +130,7 @@
   margin: 0;
   width: 18px;
   height: 18px;
-  fill: var(--black);
+  fill: $black;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -130,7 +142,7 @@
   margin: 0;
   width: 18px;
   height: 18px;
-  fill: var(--black);
+  fill: $black;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -142,25 +154,13 @@
   margin: 0;
   width: 18px;
   height: 18px;
-  fill: var(--black);
+  fill: $black;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.field:focus + .modul-name-icon-svg {
-  fill: var(--accent-color);
-}
-
-.field:focus + .modul-phone-icon-svg {
-  fill: var(--accent-color);
-}
-
-.field:focus + .modul-email-icon-svg {
-  fill: var(--accent-color);
-}
-
 :focus {
-  outline-color: var(--accent-color);
+  outline-color: $accent-color;
   outline-style: auto;
   outline-width: 1px;
 }
@@ -192,30 +192,30 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--grey);
+  color: $grey;
 }
 
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
 
-.checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  fill: var(--black);
-}
+  &-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    fill: $black;
+  }
 
-.checkbox:checked + .checkbox-icon {
-  fill: var(--accent-color);
-  background-color: var(--accent-color);
-  background-image: url(../img/icons/checked-icon2.svg);
-  background-size: contain;
-  background-origin: border-box;
+  &:checked + &-icon {
+    fill: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../img/icons/checked-icon2.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .agreement-link {
-  color: var(--accent-color);
+  color: $accent-color;
 }

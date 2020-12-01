@@ -2,10 +2,10 @@
   display: inline-flex;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .menu-item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }

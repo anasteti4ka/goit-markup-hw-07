@@ -4,7 +4,7 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: $black;
   padding-bottom: 50px;
 }
 
@@ -14,23 +14,23 @@
   margin: 10px;
   width: 370px;
   height: 294px;
-}
 
-.content-box-about > .text-wwd {
-  position: absolute;
-  top: 224px;
-  right: 0;
-  margin: 0;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
-  color: var(--white);
-  padding-top: 27px;
-  padding-bottom: 27px;
+  & > .text-wwd {
+    position: absolute;
+    top: 224px;
+    right: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: $white;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }
 
 .wwd1 {

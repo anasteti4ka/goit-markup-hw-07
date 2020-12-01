@@ -18,7 +18,7 @@
 
 .contacts-footer {
   text-decoration: none;
-  color: var(--contacts-footer);
+  color: $contacts-footer;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -26,11 +26,11 @@
   letter-spacing: 0.03em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts-footer:hover,
-.contacts-footer:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .icon-title {
@@ -39,7 +39,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
   padding-top: 10px;
   padding-left: 70px;
 }
@@ -54,7 +54,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -69,7 +69,7 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: var(--lightblack);
+  background-color: $lightblack;
   width: 358px;
   height: 50px;
   padding-top: 15px;

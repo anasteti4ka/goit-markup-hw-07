@@ -14,24 +14,26 @@
   align-items: center;
   width: 170px;
   height: 90px;
-  background-color: var(--white);
-  border: 1px solid var(--icon-color);
+  background-color: $white;
+  border: 1px solid $icon-color;
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client-link:hover {
-  border-color: var(--accent-color);
-}
+  &:hover {
+    border-color: $accent-color;
+  }
 
-.client-link:hover .client-svg,
-.client-link:focus .client-svg {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    .client-svg {
+      fill: $accent-color;
+    }
+  }
 }
 
 .client-svg {
-  fill: var(--icon-color);
+  fill: $icon-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
