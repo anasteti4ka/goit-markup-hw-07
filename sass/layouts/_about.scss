@@ -6,6 +6,23 @@
   letter-spacing: 0.03em;
   color: $black;
   padding-bottom: 50px;
+
+  &-wwd1 {
+    padding-left: 83px;
+    padding-right: 82px;
+  }
+
+  &-wwd2 {
+    padding-left: 86px;
+    padding-right: 84px;
+    max-width: 370px;
+  }
+
+  &-wwd3 {
+    padding-left: 91px;
+    padding-right: 90px;
+    max-width: 370px;
+  }
 }
 
 .content-box-about {
@@ -31,21 +48,4 @@
     padding-top: 27px;
     padding-bottom: 27px;
   }
-}
-
-.wwd1 {
-  padding-left: 83px;
-  padding-right: 82px;
-}
-
-.wwd2 {
-  padding-left: 86px;
-  padding-right: 84px;
-  max-width: 370px;
-}
-
-.wwd3 {
-  padding-left: 91px;
-  padding-right: 90px;
-  max-width: 370px;
 }

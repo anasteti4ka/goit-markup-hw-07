@@ -484,6 +484,14 @@ p {
   margin-left: -30px;
 }
 
+.portfolio-figure-portf {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
 .port-item {
   margin-top: 30px;
   margin-left: 30px;
@@ -493,14 +501,6 @@ p {
 
 .port-item:hover, .port-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.figure-portf {
-  width: 370px;
-  height: 404px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .overflow {
@@ -536,14 +536,14 @@ p {
   padding-left: 24px;
 }
 
-.portfoilio-items {
+.portfolio-items {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.project-name {
+.portfolio-items-name {
   padding-bottom: 4px;
   width: 322px;
   height: 36px;
@@ -554,7 +554,7 @@ p {
   color: #212121;
 }
 
-.project-description {
+.portfolio-items-description {
   width: 322px;
   height: 30px;
   font-weight: 400;
@@ -574,11 +574,11 @@ p {
   flex-direction: column;
 }
 
-.logo-footer {
+.footer-info-logo {
   padding-bottom: 20px;
 }
 
-.footer-padding:not(:last-child) {
+.footer-info-padding:not(:last-child) {
   padding-bottom: 9px;
 }
 
@@ -613,7 +613,7 @@ p {
   margin-left: 93px;
 }
 
-.sub-title {
+.subscribe-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -624,12 +624,12 @@ p {
   padding-bottom: 20px;
 }
 
-.footer-form {
+.subscribe-footer-form {
   display: inline-flex;
   justify-content: flex-end;
 }
 
-.sub-email {
+.subscribe-email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

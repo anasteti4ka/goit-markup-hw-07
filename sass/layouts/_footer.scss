@@ -6,14 +6,14 @@
 .footer-info {
   display: flex;
   flex-direction: column;
-}
 
-.logo-footer {
-  padding-bottom: 20px;
-}
+  &-logo {
+    padding-bottom: 20px;
+  }
 
-.footer-padding:not(:last-child) {
-  padding-bottom: 9px;
+  &-padding:not(:last-child) {
+    padding-bottom: 9px;
+  }
 }
 
 .contacts-footer {
@@ -46,39 +46,39 @@
 
 .subscribe {
   margin-left: 93px;
-}
 
-.sub-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
+  &-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 
-.footer-form {
-  display: inline-flex;
-  justify-content: flex-end;
-}
+  &-footer-form {
+    display: inline-flex;
+    justify-content: flex-end;
+  }
 
-.sub-email {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: $lightblack;
-  width: 358px;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  margin-right: 12px;
-  font-weight: normal;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  &-email {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $lightblack;
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
 }

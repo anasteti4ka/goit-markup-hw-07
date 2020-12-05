@@ -789,6 +789,23 @@ p {
   padding-bottom: 50px;
 }
 
+.about-us-wwd1 {
+  padding-left: 83px;
+  padding-right: 82px;
+}
+
+.about-us-wwd2 {
+  padding-left: 86px;
+  padding-right: 84px;
+  max-width: 370px;
+}
+
+.about-us-wwd3 {
+  padding-left: 91px;
+  padding-right: 90px;
+  max-width: 370px;
+}
+
 .content-box-about {
   width: calc(100% / 3 - 30px);
   position: relative;
@@ -812,23 +829,6 @@ p {
   color: #ffffff;
   padding-top: 27px;
   padding-bottom: 27px;
-}
-
-.wwd1 {
-  padding-left: 83px;
-  padding-right: 82px;
-}
-
-.wwd2 {
-  padding-left: 86px;
-  padding-right: 84px;
-  max-width: 370px;
-}
-
-.wwd3 {
-  padding-left: 91px;
-  padding-right: 90px;
-  max-width: 370px;
 }
 
 .team {
@@ -862,10 +862,40 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.client-list {
+.client {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+
+.client-1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.client-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.client-3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.client-4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.client-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.client-6 {
+  width: 88.48px;
+  height: 45.44px;
 }
 
 .client-item:not(:last-child) {
@@ -899,36 +929,6 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-1 {
-  width: 44.27px;
-  height: 49.23px;
-}
-
-.client-2 {
-  width: 40px;
-  height: 52px;
-}
-
-.client-3 {
-  width: 41px;
-  height: 42.6px;
-}
-
-.client-4 {
-  width: 79.66px;
-  height: 42.02px;
-}
-
-.client-5 {
-  width: 59px;
-  height: 47px;
-}
-
-.client-6 {
-  width: 88.48px;
-  height: 45.44px;
-}
-
 .flexbox-footer {
   display: flex;
   justify-content: space-between;
@@ -939,11 +939,11 @@ p {
   flex-direction: column;
 }
 
-.logo-footer {
+.footer-info-logo {
   padding-bottom: 20px;
 }
 
-.footer-padding:not(:last-child) {
+.footer-info-padding:not(:last-child) {
   padding-bottom: 9px;
 }
 
@@ -978,7 +978,7 @@ p {
   margin-left: 93px;
 }
 
-.sub-title {
+.subscribe-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -989,12 +989,12 @@ p {
   padding-bottom: 20px;
 }
 
-.footer-form {
+.subscribe-footer-form {
   display: inline-flex;
   justify-content: flex-end;
 }
 
-.sub-email {
+.subscribe-email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
